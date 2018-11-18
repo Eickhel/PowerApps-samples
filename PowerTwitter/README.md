@@ -2,7 +2,7 @@
 
 A pixel-by-pixel implementation of Twitter's homepage in a canvas PowerApp integrating [Azure's Text Analytics API](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics) to get the sentiment of each tweet in the timeline. It also features the same dark mode!
 
-![PowerTwitter](/PowerTwitter/PowerTwitter.jpg)
+![PowerTwitter](/PowerTwitter/images/PowerTwitter.jpg)
 
 ## Prerequisites
 You will need to have an Azure Cognitive Service's Text Analytics API key in order to analyze the sentiment of the tweets. You can request a free instance that is good for 5,000 transactions per month [in this link](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/text-analytics/)
