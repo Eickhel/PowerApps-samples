@@ -10,3 +10,8 @@ A pixel-by-pixel implementation of Twitter's homepage in a canvas PowerApp
 An inline-help component to aid your users when filling forms
 
 ![InfoComponent](/InfoComponent/images/InfoComponent.png)
+
+## [PowerFont](https://github.com/Eickhel/PowerApps-samples/tree/master/PowerFont)
+A PowerApp example of using custom fonts with the help of SVGs
+
+![PowerFont](/PowerFont/images/PowerFont.png)
