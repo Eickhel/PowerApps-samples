@@ -15,3 +15,9 @@ An inline-help component to aid your users when filling forms
 A PowerApp example of using custom fonts with the help of SVGs
 
 ![PowerFont](/PowerFont/images/PowerFont.png)
+
+## [PowerVault](https://github.com/Eickhel/PowerApps-samples/tree/master/PowerVault)
+Manage your Azure Key Vaults from PowerApps
+
+![PowerVault](/PowerVault/images/PowerVault.png)
+![PowerVault](/PowerVault/images/PowerVaultAbout.png)
