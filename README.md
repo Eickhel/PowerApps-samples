@@ -20,3 +20,8 @@ A PowerApp example of using custom fonts with the help of SVGs
 A PowerApp template using components and themes
 
 ![CaseManagement](/PowerTemplates/images/CaseManagement.png)
+## [PowerVault](https://github.com/Eickhel/PowerApps-samples/tree/master/PowerVault)
+Manage your Azure Key Vaults from PowerApps
+
+![PowerVault](/PowerVault/images/PowerVault.png)
+![PowerVault](/PowerVault/images/PowerVaultAbout.png)
