@@ -4,4 +4,8 @@ A pixel-by-pixel implementation of Twitter's homepage in a canvas PowerApp that 
 
 ![PowerTwitter](/PowerTwitter/images/PowerTwitterCDS.png)
 
+Releases:
+
+https://github.com/Eickhel/PowerApps-samples/tree/master/PowerTwitter/app
+
 More info: soon.
