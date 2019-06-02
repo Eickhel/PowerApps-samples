@@ -8,4 +8,4 @@ Releases:
 
 https://github.com/Eickhel/PowerApps-samples/tree/master/PowerTwitter/app
 
-More info: soon.
+More info @ [PowerNimbus](https://www.powernimbus.com/2019/06/beyond-powertwitter-welcome-cds-and-alexa-integrations-at-dynamics-365-saturday-madrid)
