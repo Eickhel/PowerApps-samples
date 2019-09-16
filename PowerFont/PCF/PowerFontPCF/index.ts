@@ -4,6 +4,8 @@ export class PowerFontPCF implements ComponentFramework.StandardControl<IInputs,
   private _container: HTMLDivElement;
   private _context: ComponentFramework.Context<IInputs>;
   private labelElement: HTMLLabelElement;
+  private _fontName: string;
+  private _link: HTMLLinkElement;
 
   /**
    * Empty constructor.
@@ -29,8 +31,29 @@ export class PowerFontPCF implements ComponentFramework.StandardControl<IInputs,
     // creating a HTML label element that shows the value that is set on the linear range control
     this.labelElement = document.createElement("label");
     this.labelElement.innerHTML = "This is a test";
+    this.labelElement.setAttribute("class", "PowerFont");
     this._container.appendChild(this.labelElement);
     container.appendChild(this._container);
+
+    this._fontName = context.parameters.fontName.formatted ? context.parameters.fontName.formatted : "";
+
+    if (this._fontName.length > 0) {
+      // Thanks to https://www.freecodecamp.org/news/three-ways-to-title-case-a-sentence-in-javascript-676a9175eb27/
+      this._fontName = this._fontName
+        .toLowerCase()
+        .split(" ")
+        .map(function(word) {
+          return word.charAt(0).toUpperCase() + word.slice(1);
+        })
+        .join("+");
+
+      this._link = document.createElement("link");
+      this._link.className = "PowerFontUrl";
+      this._link.rel = "stylesheet";
+      this._link.href = `https://fonts.googleapis.com/css?family=${this._fontName}&display=swap`;
+
+      document.getElementsByTagName("head")[0].appendChild(this._link);
+    }
   }
 
   /**
@@ -39,6 +62,21 @@ export class PowerFontPCF implements ComponentFramework.StandardControl<IInputs,
    */
   public updateView(context: ComponentFramework.Context<IInputs>): void {
     // Add code to update control view
+    this._fontName = context.parameters.fontName.formatted ? context.parameters.fontName.formatted : "";
+
+    if (this._fontName.length > 0) {
+      // Thanks to https://www.freecodecamp.org/news/three-ways-to-title-case-a-sentence-in-javascript-676a9175eb27/
+      this._fontName = this._fontName
+        .toLowerCase()
+        .split(" ")
+        .map(function(word) {
+          return word.charAt(0).toUpperCase() + word.slice(1);
+        })
+        .join("+");
+      var link = <HTMLLinkElement>document.getElementsByClassName("PowerNimbus")[0];
+      document.getElementsByTagName("head")[0].removeChild(link);
+      //link.href = `https://fonts.googleapis.com/css?family=${this._fontName}&display=swap`;
+    }
   }
 
   /**

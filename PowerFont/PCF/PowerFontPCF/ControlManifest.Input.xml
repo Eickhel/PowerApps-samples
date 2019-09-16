@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="PowerNimbus" constructor="PowerFontPCF" version="1.0.1" display-name-key="PowerFontPCF" description-key="Goole Font loader component" control-type="standard">
+  <control namespace="PowerNimbus" constructor="PowerFontPCF" version="1.0.3" display-name-key="PowerFontPCF" description-key="Goole Font loader component" control-type="standard">
     <property name="fontName" display-name-key="fontName_Display_Key" description-key="fontName_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
     <resources>
       <code path="index.ts" order="1"/>
