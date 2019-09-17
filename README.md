@@ -14,7 +14,7 @@ An inline-help component to aid your users when filling forms
 ## [PowerFont](https://github.com/Eickhel/PowerApps-samples/tree/master/PowerFont)
 A PowerApp example of using custom fonts with the help of SVGs
 
-![PowerFont](/PowerFont/images/PowerFont.png)
+![PowerFont](/PowerFont/Canvas/images/PowerFont.png)
 
 ## [PowerTemplate: Case Management](https://github.com/Eickhel/PowerApps-samples/tree/master/PowerTemplates)
 A PowerApp template using components and themes
