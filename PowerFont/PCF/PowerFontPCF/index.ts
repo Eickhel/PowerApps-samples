@@ -26,20 +26,23 @@ export class PowerFontPCF implements ComponentFramework.StandardControl<IInputs,
     state: ComponentFramework.Dictionary,
     container: HTMLDivElement
   ) {
-    // main DIV container
+    // Main DIV container
     this._container = document.createElement("div");
-    // creating a HTML label element that shows the styled text
+    // HTML label element that shows the styled text
     this.labelElement = document.createElement("label");
-    this.labelElement.innerHTML = "This is a test";
-    this.labelElement.setAttribute("style", "font-family: 'Ruge Boogie', cursive;");
+    this.labelElement.innerHTML = context.parameters.text.formatted ? context.parameters.text.formatted : "PowerFont sample";
+    this.labelElement.setAttribute("style", "font-family: 'Raleway', cursive; font-size: 20px");
     this._container.appendChild(this.labelElement);
+
     container.appendChild(this._container);
 
+    // Create the request for the font on Google - Raleway by default
     var link = document.createElement("link");
     link.id = "PowerFontUrl";
     link.rel = "stylesheet";
-    link.href = `https://fonts.googleapis.com/css?family=Indie+Flower&display=swap`;
+    link.href = `https://fonts.googleapis.com/css?family=Raleway&display=swap`;
 
+    // Add the request on the head of the document
     document.getElementsByTagName("head")[0].appendChild(link);
   }
 
@@ -49,11 +52,13 @@ export class PowerFontPCF implements ComponentFramework.StandardControl<IInputs,
    */
   public updateView(context: ComponentFramework.Context<IInputs>): void {
     // Add code to update control view
-    this._fontName = context.parameters.fontName.formatted ? context.parameters.fontName.formatted : "Indie Flower";
+    this._fontName = context.parameters.fontName.formatted ? context.parameters.fontName.formatted : "Raleway";
     this._fontSize = context.parameters.fontSize.raw ? context.parameters.fontSize.raw : 20;
 
+    // val is the default when debugging
     if (this._fontName.length > 0 && this._fontName != "val") {
-      // Thanks to https://www.freecodecamp.org/news/three-ways-to-title-case-a-sentence-in-javascript-676a9175eb27/
+      
+      // Title case thanks to: https://www.freecodecamp.org/news/three-ways-to-title-case-a-sentence-in-javascript-676a9175eb27/
       this._fontName = this._fontName
         .toLowerCase()
         .split(" ")
@@ -61,9 +66,12 @@ export class PowerFontPCF implements ComponentFramework.StandardControl<IInputs,
           return word.charAt(0).toUpperCase() + word.slice(1);
         })
         .join("+");
+
+      // We get the previously created link element
       var link = <HTMLLinkElement>document.getElementById("PowerFontUrl");
       link.href = `https://fonts.googleapis.com/css?family=${this._fontName}&display=swap`;
 
+      // Set the style for the updated font
       this.labelElement.setAttribute(
         "style",
         `font-family: '${this._fontName.replace("+", " ")}', cursive; font-size: ${this._fontSize}px`
