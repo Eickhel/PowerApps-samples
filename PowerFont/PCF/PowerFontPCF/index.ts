@@ -2,11 +2,10 @@ import { IInputs, IOutputs } from "./generated/ManifestTypes";
 
 export class PowerFontPCF implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   private _container: HTMLDivElement;
-  private _context: ComponentFramework.Context<IInputs>;
-  private labelElement: HTMLLabelElement;
   private _fontName: string;
   private _fontSize: number;
-  private _link: HTMLLinkElement;
+
+  private labelElement: HTMLLabelElement;
 
   /**
    * Empty constructor.
@@ -27,21 +26,21 @@ export class PowerFontPCF implements ComponentFramework.StandardControl<IInputs,
     state: ComponentFramework.Dictionary,
     container: HTMLDivElement
   ) {
-    this._context = context;
+    // main DIV container
     this._container = document.createElement("div");
-    // creating a HTML label element that shows the value that is set on the linear range control
+    // creating a HTML label element that shows the styled text
     this.labelElement = document.createElement("label");
     this.labelElement.innerHTML = "This is a test";
     this.labelElement.setAttribute("style", "font-family: 'Ruge Boogie', cursive;");
     this._container.appendChild(this.labelElement);
     container.appendChild(this._container);
 
-    this._link = document.createElement("link");
-    this._link.id = "PowerFontUrl";
-    this._link.rel = "stylesheet";
-    this._link.href = `https://fonts.googleapis.com/css?family=Indie+Flower&display=swap`;
+    var link = document.createElement("link");
+    link.id = "PowerFontUrl";
+    link.rel = "stylesheet";
+    link.href = `https://fonts.googleapis.com/css?family=Indie+Flower&display=swap`;
 
-    document.getElementsByTagName("head")[0].appendChild(this._link);
+    document.getElementsByTagName("head")[0].appendChild(link);
   }
 
   /**
