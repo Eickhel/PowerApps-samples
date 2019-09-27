@@ -15,9 +15,11 @@ An inline-help component to aid your users when filling forms
 Two ways of using custom fonts inside PowerApps
 
 SVG version:
+
 ![PowerFont](/PowerFont/Canvas/images/PowerFont.png)
 
 PowerApps Component Framework version:
+
 ![PowerFontPCF](/PowerFont/PCF/images/PowerFontPCF.gif)
 
 ## [PowerTemplate: Case Management](https://github.com/Eickhel/PowerApps-samples/tree/master/PowerTemplates)
