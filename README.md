@@ -38,7 +38,7 @@ How to work with Excel calculated data in PowerApps
 
 ![ExcelCalculated](/ExcelCalculated/images/ExcelCalculated.png)
 
-## [PCF Proof of concept](https://github.com/Eickhel/PowerApps-samples/tree/master/ExcelCalculated)
+## [PCF Proof of concept](https://github.com/Eickhel/PowerApps-samples/tree/master/PCF%20POC)
 Fetching members of GitHub's organizations
 
 ![PCFPOC](/PCF%20POC/images/GitHubPCF.png)
