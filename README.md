@@ -22,17 +22,6 @@ PowerApps Component Framework version:
 
 ![PowerFontPCF](https://github.com/Eickhel/PowerApps-samples/raw/master/PowerFont/PCF/images/PowerFontPCF.gif)
 
-## [PowerTemplate: Case Management](https://github.com/Eickhel/PowerApps-samples/tree/master/PowerTemplates)
-A PowerApp template using components and themes
-
-![CaseManagement](https://github.com/Eickhel/PowerApps-samples/raw/master/PowerTemplates/images/CaseManagement.png)
-
-## [PowerVault](https://github.com/Eickhel/PowerApps-samples/tree/master/PowerVault)
-Manage your Azure Key Vaults from PowerApps
-
-![PowerVault](https://github.com/Eickhel/PowerApps-samples/raw/master/PowerVault/images/PowerVault.png)
-![PowerVault](https://github.com/Eickhel/PowerApps-samples/raw/master/PowerVault/images/PowerVaultAbout.png)
-
 ## [Excel Calculated](https://github.com/Eickhel/PowerApps-samples/tree/master/ExcelCalculated)
 How to work with Excel calculated data in PowerApps
 
