@@ -26,8 +26,3 @@ PowerApps Component Framework version:
 How to work with Excel calculated data in PowerApps
 
 ![ExcelCalculated](https://github.com/Eickhel/PowerApps-samples/raw/master/ExcelCalculated/images/ExcelCalculated.png)
-
-## [PCF Proof of concept](https://github.com/Eickhel/PowerApps-samples/tree/master/PCF%20POC)
-Fetching members of GitHub's organizations
-
-![PCFPOC](https://github.com/Eickhel/PowerApps-samples/raw/master/PCF%20POC/images/GitHubPCF.png)
